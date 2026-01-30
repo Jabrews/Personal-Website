@@ -1,0 +1,49 @@
+@use './hero' as *;
+@use './projects' as *;
+@use './divider' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* improve text rendering */
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* inherit fonts */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* avoid text overflow issues */
+p,
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}

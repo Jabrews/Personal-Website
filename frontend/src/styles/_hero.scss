@@ -1,0 +1,118 @@
+
+.hero-container {
+  margin-top: 2em;
+  background-color: gray;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  align-content: start;
+  justify-items: stretch;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+
+    .hero-left {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+
+        .hero-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                height: 100%;
+                width: 0.45em;
+                background-color: rgb(32, 32, 32);
+                margin-right: 0.4em;
+                color : rgb(32, 32, 32);
+            }
+
+            h1 {
+                font-size: 5em;
+                line-height: 0.8em;
+                color : rgb(65, 65, 65)
+            }
+        }
+
+        p {
+            margin-top: 0.4em;
+            line-height: 1em;
+            font-size: 2.2em;
+            color : rgb(32, 32, 32);
+            font-weight: 525;
+            align-self: center;
+            justify-self: center;
+            margin-right: 2.2em;
+
+
+
+        }
+
+        button {
+            margin-left: 15%;
+            margin-right: 15%;
+            border: none;
+            border-radius: 1em;
+            padding: 1em;
+            margin-top: 5em;
+            margin-bottom: 2em;
+            background-color: rgb(207, 207, 207);
+
+            &:hover{
+                scale: 1.1;
+            }
+
+
+            p {
+                margin-top: 0;
+                margin-right: 0;
+                margin-left: 0;
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+    .hero-right {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+
+
+        .img-placeholder {
+            // max-width: 25em;
+            // max-height : 30em;
+            // height: 100%;
+            // width: 100%;
+            width: 100%;
+            max-width: 25em;
+            aspect-ratio: 5 / 6;   /* replaces height */
+            background-color: black;
+            margin-bottom: 2em;
+        }
+
+
+    }
+
+
+}
