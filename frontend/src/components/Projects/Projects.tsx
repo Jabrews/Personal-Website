@@ -7,10 +7,26 @@ export default function Projects() {
                 <p> My Projects </p>
             </div>
             <div className='body'>
-                <div className="item"> FlowGrid</div>
-                <div className="item"> FlowGrid</div>
-                <div className="item"> FlowGrid</div>
-                <div className="item"> FlowGrid</div>
+                <div className="item"> 
+                    <p>
+                    FlowGrid
+                    </p>     
+                </div>
+                <div className="item"> 
+                    <p>
+                    FlowGrid
+                    </p>     
+                </div>
+                <div className="item"> 
+                    <p>
+                    FlowGrid
+                    </p>     
+                </div>
+                <div className="item"> 
+                    <p>
+                    FlowGrid
+                    </p>     
+                </div>
             </div>
 
         </div>

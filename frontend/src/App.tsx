@@ -4,6 +4,7 @@ import { useRef } from "react"
 import Hero from "./components/Hero/Hero"
 import Divider from "./components/Divider/Divider"
 import Projects from "./components/Projects/Projects"
+import Articles from "./components/Articles/Articles"
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
       <Hero appDivRef={appDivref}/>
       <Divider />
       <Projects />
+      <Divider />
+      <Articles />
       <Divider />
     </div>
   )

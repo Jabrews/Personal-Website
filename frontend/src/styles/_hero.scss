@@ -25,13 +25,19 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
+
+        @media (max-width: 900px) {
+            align-items: center;
+        }
+
 
 
         .hero-header {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
+            // margin-left: 4vw;
 
             div {
                 height: 100%;
@@ -42,21 +48,36 @@
             }
 
             h1 {
-                font-size: 5em;
+                font-size: clamp(2.5rem, 5vw, 5em);
                 line-height: 0.8em;
                 color : rgb(65, 65, 65)
             }
         }
 
         p {
+            // margin-left: 4vw;
+            // align-self: center;
             margin-top: 0.4em;
             line-height: 1em;
-            font-size: 2.2em;
+            font-size: clamp(1.5rem, 2.0vw, 2.2em);
             color : rgb(32, 32, 32);
             font-weight: 525;
-            align-self: center;
             justify-self: center;
-            margin-right: 2.2em;
+            max-width: fit-content;
+
+            align-self: flex-start;
+            margin-left: 6vw;
+
+            @media (min-width: 900px) and (max-width: 1500px) {
+                margin-left: 4vw;
+            } 
+
+            @media (max-width: 900px) {
+            margin-left: 4vw;
+            align-self: center;
+            }
+
+
 
 
 
@@ -71,6 +92,12 @@
             margin-top: 5em;
             margin-bottom: 2em;
             background-color: rgb(207, 207, 207);
+
+            @media (max-width: 900px) {
+                margin-top: 2em;
+                padding: 0.8em;
+            }
+
 
             &:hover{
                 scale: 1.1;
@@ -96,6 +123,10 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        @media (max-width: 900px) {
+            margin-top: 0;
+            margin: 0.5em;
+        }
 
 
 
@@ -109,6 +140,10 @@
             aspect-ratio: 5 / 6;   /* replaces height */
             background-color: black;
             margin-bottom: 2em;
+
+
+
+
         }
 
 

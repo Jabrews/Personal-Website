@@ -4,6 +4,7 @@
     display: grid;
     grid-template-rows: auto;
     justify-content: stretch;
+    align-items: center;
     gap: 0;
     
     .header {
@@ -15,6 +16,7 @@
         max-height: fit-content;
 
         p {
+            letter-spacing: 0.1em;
             margin-left: 0.4em;
             color : rgb(201, 201, 201);
             font-size: 1.4em;
@@ -26,10 +28,7 @@
         background-color: gray;
         padding: 1em;
         display: grid;
-        // grid-template-columns: 1fr 1fr;
-        align-items: center;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
         gap: 1em;
 
         @media (max-width: 900px) {
@@ -42,7 +41,6 @@
         .item {
             border: 0.4em;
             width: 100%;
-            max-width: 50em;
             aspect-ratio: 2 / 1;   /* kmatches 40em × 20em */
             display: flex;
             align-items: center;
@@ -50,9 +48,25 @@
             background-color: blue;
 
             @media (max-width: 900px) {
-                max-width: 40em;
+                max-width: 50em;
+            }
+
+            p {
+                opacity: 50%;
+                font-size: clamp(1em, 3vw, 2rem);
+                letter-spacing: 0.2em;
+                font-style: italic;
+                font-weight: lighter;
+
+
+                @media (max-width: 900px) {
+                    font-size: 2em;
+                }
+
 
             }
+
+
         }
     }
 
