@@ -1,0 +1,141 @@
+.contact-header {
+    letter-spacing: 0.2em;
+    color : rgb(39, 38, 38);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10vw;
+
+    @media (max-width: 900px) {
+        margin-left: 0.2em;
+    }
+
+}
+
+.contact-container {
+    padding: 1em;
+    justify-self: center;
+    background-color: rgb(68, 68, 68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+
+
+    @media (max-width: 900px) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+
+    .input-container {
+        margin-top: 2em;
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+
+        @media (max-width: 900px) {
+            width: 100%;
+        }
+
+
+        // label 
+        h1 {
+            padding-top: 0.2em;
+            color : rgb(46, 46, 46);
+            font-size: 1.2em;
+            margin-left: 0.8em;
+
+        }
+
+
+        .input-styles {
+            font-family: monospace;
+            color : rgb(32, 32, 32);
+            background-color: rgb(212, 211, 211);
+            border: 1px solid black;
+        }
+
+        input {
+            margin-left: 1em;
+            margin-top: 0.2em;
+            margin-bottom: 1em;
+            max-width: 40ch;
+            font-size: 1.2em;
+            border-radius: 0.2em;
+            padding: 0.2em;
+
+         @media (max-width: 900px) {
+            font-size: 1em;
+         }
+
+
+
+        }
+
+        #subject {
+            max-width: clamp(40ch, 60vw, 65ch);
+        }
+
+        textarea {
+            padding: 0.2em;
+            border: 0.3;
+            font-size: 1.2em;
+            margin-right: 3em;
+            margin-left: 1em;
+            margin-bottom: 2em;
+            min-height: 20em;
+            max-height: 20em;
+            overflow-y: scroll;
+            resize: vertical;
+
+            @media (max-width: 900px) {
+                font-size: 1em;
+            }
+
+
+        }
+
+
+
+    }
+
+
+    button {
+        border: none;
+        border-radius: 1em;
+        padding: 1em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+        background-color: rgb(207, 207, 207);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 900px) {
+            margin-top: 2em;
+            padding: 0.8em;
+        }
+
+
+        &:hover {
+            scale: 1.1;
+        }
+
+
+        p {
+            margin-top: 0;
+            margin-right: 0.5em;
+            margin-left: 0;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+    }
+
+}

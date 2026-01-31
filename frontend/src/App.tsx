@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero"
 import Divider from "./components/Divider/Divider"
 import Projects from "./components/Projects/Projects"
 import Articles from "./components/Articles/Articles"
+import Contact from "./components/Contact/Contact"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Divider />
       <Articles />
       <Divider />
+      <Contact />
     </div>
   )
 }
