@@ -1,8 +1,3 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-
-// util
-import { get_svg_icons } from "../util/get_svg_icons";
 
 // components
 import Item from "./Item/Item";
