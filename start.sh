@@ -1,4 +1,4 @@
-cd fontend
+cd frontend
 
 npm install
 npm start
