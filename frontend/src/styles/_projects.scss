@@ -40,27 +40,46 @@
 
 
 
+        #flowgrid {
+            background-image: url("../assets/1.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
+        #kiloquest {
+            background-image: url("../assets/2.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
         .item {
+            cursor: pointer;
             border: 0.4em;
             width: 100%;
             aspect-ratio: 2 / 1;   /* kmatches 40em × 20em */
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: row;
             background-color: blue;
 
             @media (max-width: 900px) {
                 max-width: 50em;
             }
 
-            p {
-                opacity: 50%;
+            svg {
+                width: clamp(1.5em, 3.5vw, 2.5rem);
+                height: clamp(1.5em, 3.5vw, 2.5rem);
+            }
+
+            .float-text {
+                opacity: 100%;
                 font-size: clamp(1em, 3vw, 2rem);
                 letter-spacing: 0.2em;
                 font-style: italic;
-                font-weight: lighter;
+                font-weight: bold;
 
 
                 @media (max-width: 900px) {

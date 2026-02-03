@@ -34,6 +34,7 @@
 
 
         .hero-header {
+            margin-top: 2em;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -66,14 +67,14 @@
             max-width: fit-content;
 
             align-self: flex-start;
-            margin-left: 6vw;
+            margin-left: 2.5em;
 
             @media (min-width: 900px) and (max-width: 1500px) {
-                margin-left: 4vw;
+                margin-left: 1.2em;
             } 
 
             @media (max-width: 900px) {
-            margin-left: 4vw;
+            margin-left: 2vw;
             align-self: center;
             }
 
@@ -135,10 +136,13 @@
             // max-height : 30em;
             // height: 100%;
             // width: 100%;
+            background : url('../assets/frame-done.png');
+            background-size: cover;
+            background-position: center;
+
             width: 100%;
-            max-width: 25em;
+            max-width: 27em;
             aspect-ratio: 5 / 6;   /* replaces height */
-            background-color: black;
             margin-bottom: 2em;
 
 

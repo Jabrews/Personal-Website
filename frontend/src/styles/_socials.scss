@@ -1,0 +1,61 @@
+
+    .socials-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10%;
+        margin-left: 10%;
+        padding-bottom: 10%;
+
+        @media (max-width: 900px) {
+            margin-left: 2%;
+        }
+
+
+        h1 {
+            font-family: monospace;
+            letter-spacing: 0.1em;
+            color : rgb(39, 38, 38);
+            font-size: 2em;
+            font-weight: bold;
+
+
+        }
+
+
+        .item {
+            cursor: pointer; 
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            padding: 0.2em;
+
+            &:hover {
+                border-radius: 1em;
+                background-color: gray;
+            }
+
+
+
+            img {
+                width: 5em;
+                height: 5em;
+                background-color: white;
+                background-image: none;
+                background: none;
+            }
+
+            p {
+                margin-left: 1em;
+                font-weight: bold;
+                font-size: 1.5em;
+                font-family: monospace;
+            }
+
+        }
+
+
+    }

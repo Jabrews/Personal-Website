@@ -1,5 +1,5 @@
 // hooks
-import {useSvgIcons} from '../hooks/useSvgIcons'
+import { get_svg_icons } from '../util/get_svg_icons'
 
 export default function Articles() {
 
@@ -26,7 +26,7 @@ export default function Articles() {
 
                 <div className='no-item'>
                     <div>
-                        {useSvgIcons({icon : 'no-article', size : 41})}
+                        {get_svg_icons({icon : 'no-article', size : 41})}
                     </div> 
                     <p> Nothing here yet.</p>
                 </div>

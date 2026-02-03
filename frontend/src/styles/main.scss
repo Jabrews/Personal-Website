@@ -3,6 +3,13 @@
 @use './divider' as *;
 @use './articles' as *;
 @use './contact' as *;
+@use './socials' as *;
+@use './glass_card' as *;
+
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 *,
 *::before,
@@ -74,4 +81,28 @@ h1, h2, h3, h4, h5, h6 {
 
 *::-webkit-scrollbar-thumb:hover {
   background-color: #222;
+}
+
+.bottom-bit {
+  bottom: 0;
+  height: 2vh;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #1a1a1a,
+    #2b2b2b
+  );
+}
+
+.top-bit {
+  top: 0;
+  height: 1vh;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #1a1a1a,
+    #2b2b2b
+  );
 }
