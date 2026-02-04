@@ -11,6 +11,14 @@ type ContactProps = {
     contactFormBtnRef: React.RefObject<HTMLButtonElement | null>
 }
 
+// EMAIL API
+const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID
+const emailId = import.meta.env.VITE_EMAIL_TEMPLATE_ID
+const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY
+
+
+
+
 export default function Contact({ contactFormBtnRef }: ContactProps) {
 
 
@@ -24,6 +32,7 @@ export default function Contact({ contactFormBtnRef }: ContactProps) {
 
     // error fade away
     useEffect(() => {
+        if (!errorText) return
         if (errorText.length == 0) return
 
         // reset fade state if reused
@@ -59,10 +68,10 @@ export default function Contact({ contactFormBtnRef }: ContactProps) {
             message: `${dummySubject} \n\n ${dummyBody}`,
         }
         send(
-            'service_9lbduef',
-            'template_kpatgdo',
+            serviceId,
+            emailId,
             templateEmail,
-            { publicKey: "jGM0dl3-0c5zLpHHE" },
+            { publicKey: publicKey },
         )
             .then(
                 () => {

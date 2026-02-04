@@ -34,7 +34,6 @@
 
 
         .hero-header {
-            margin-top: 2em;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -56,7 +55,6 @@
         }
 
         p {
-            // margin-left: 4vw;
             // align-self: center;
             margin-top: 0.4em;
             line-height: 1em;
@@ -74,7 +72,7 @@
             } 
 
             @media (max-width: 900px) {
-            margin-left: 2vw;
+            margin-left: 6vw;
             align-self: center;
             }
 
@@ -141,7 +139,7 @@
             background-position: center;
 
             width: 100%;
-            max-width: 27em;
+            max-width: 26em;
             aspect-ratio: 5 / 6;   /* replaces height */
             margin-bottom: 2em;
 

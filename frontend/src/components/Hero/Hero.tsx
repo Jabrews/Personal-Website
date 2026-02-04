@@ -34,9 +34,10 @@ export default function Hero({ appDivRef, contactFormBtnRef }: HeroProps) {
 
                 <div className='hero-header'>
                     <div> p </div>
-                    <h1> Welcome to <br /> Website </h1>
+                    <h1> Welcome to <br /> My Website </h1>
                 </div>
-                <p> blah blah blah blah blah <br /> blah blah</p>
+                {/* <p> blah blah blah blah blah <br /> blah blah</p> */}
+                <p> My Name is Jacob, <br/> and this is where I'll store <br /> my work and more!</p>
                 {appDivRef !== null ? (
                     <motion.button
                         onClick={handleContactBtnDwn}
