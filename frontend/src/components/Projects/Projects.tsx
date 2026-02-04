@@ -35,7 +35,7 @@ export default function Projects() {
             <div className="body">
                 {projectItems.map((item) => (
                     <span onClick={() => {handleClick(item)}}>
-                        <Item item={item} />
+                        <Item item={item} key={`${item}-project-item`}/>
                     </span>
                 ))}
             </div>
