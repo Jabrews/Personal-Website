@@ -4,7 +4,7 @@ import Item from "./Item/Item";
 
 export default function Projects() {
 
-    const projectItems = ["FlowGrid", "KiloQuest"];
+    const projectItems = ["FlowGrid", "SmileysMaze","KiloQuest", ];
 
     // link open switch case
     const handleClick = (projectName : string) => {
@@ -17,6 +17,9 @@ export default function Projects() {
                 break
             case 'KiloQuest' :
                 linkUrl='https://jabrews.itch.io/kilo-quest-demo'
+                break
+            case 'SmileysMaze' :
+                linkUrl='https://jabrews.itch.io/smileys-maze'
                 break
             default :
                 return

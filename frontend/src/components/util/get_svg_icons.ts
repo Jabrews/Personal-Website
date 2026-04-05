@@ -7,6 +7,8 @@ import { SendHorizontal } from 'lucide-react';
 import { Check } from 'lucide-react';
 import { Grid3x3 } from 'lucide-react';
 import { Cat } from 'lucide-react';
+import { Smile } from 'lucide-react';
+
 
 
 type UseSvgIconArguments = {
@@ -27,6 +29,8 @@ export function get_svg_icons({ icon, size }: UseSvgIconArguments) {
         return React.createElement(Grid3x3)
     case 'kiloquest' :
         return React.createElement(Cat)
+    case 'smileysmaze' :
+        return React.createElement(Smile)
 
   }
 
